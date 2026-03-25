@@ -1,5 +1,8 @@
 # ELF-Auditor
 Security auditing tools for Linux ELF binaries (Version 1 and Version 2)
+1. **Version 1 (Community Edition)** – Free, open-source, basic scanning features.
+2. **Version 2 (Professional Edition)** – Paid version, with additional professional features unlocked via a license key.
+
 
 ## License
 This software is proprietary. See [LICENSE.txt](LICENSE.txt) for details.  
@@ -7,33 +10,31 @@ You may not redistribute, copy, or sell this software without permission.
 
 ---
 
-## Version 1 – Compile and Run
-
-1. **Compile**
-    gcc elf_auditor_v1.c -o elf-auditor-v1
-2. **Run**
-    ./elf-auditor-v1 <binary-name>
+## Version 1 – Usage:(Community Edition)
+1. Unzip the file
+    unzip elf-auditor_v1.zip
+2. Make it executable
+    chmod +x elf-auditor-v1
+3. First Run
+    ./elf-auditor-v1 /path/to/binary
 
 > Example:
     ./elf-auditor-v1 /bin/ls
 
 ---
 
-## Version 2 – Compile and Run
+## Version 2 – Usage:(Professional Edition)
 
-1. **Compile**
-    gcc -Wall elf_auditor_v2.c -o elf-auditor
-2. **Run**
-    ./elf-auditor --help
-    ./elf-auditor --scan <binary>
-    ./elf-auditor --json <binary>
-    ./elf-auditor --risk <binary>
-    ./elf-auditor --report <binary>
-
-> Example:
-    ./elf-auditor --scan /bin/ls
-
----
+1. Unzip the file
+    unzip version2-auditor.zip
+2. Make it executable
+    chmod +x version2-auditor
+3. First Run
+    ./Version2 --help
+    ./Version2 --scan path/to//binary
+    ./Version2 --json /path/to/binary
+    ./Version2 --risk /path/to/binary
+    ./Version2 --report /path/to/binary
 
 ## Directory Structure
 
@@ -41,7 +42,7 @@ You may not redistribute, copy, or sell this software without permission.
     ├── LICENSE.txt
     ├── README.md
     ├── src/
-    │   ├── elf_auditor_v1.c
-        └── elf_auditor_v2.c
+        ├── elf_auditor_v1.zip
+        
     
 
