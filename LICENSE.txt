@@ -1,0 +1,29 @@
+==============================
+ELF Auditor – Proprietary License
+==============================
+
+Copyright (c) 2026 Jaff. All rights reserved.
+
+1. License Grant:
+   - Version 1 (elf_auditor_v1) is free to use, modify, and distribute.
+   - Version 2 (elf_auditor_v2) is proprietary. You are granted a non-exclusive,
+     non-transferable, revocable license to use the software only if you have
+     purchased a valid license key.
+
+2. Restrictions for Version 2:
+   - You may NOT copy, distribute, sell, or sublicense Version 2 source code
+     without explicit written permission from the author.
+   - Reverse engineering, decompiling, or modifying Version 2 source code
+     is strictly prohibited, except where legally allowed.
+   - Redistribution of Version 2 binaries or source code is forbidden
+     without authorization.
+
+3. Warranty:
+   This software is provided "as is", without warranty of any kind.
+   The author is not responsible for any damages arising from
+   use or inability to use this software.
+
+4. Termination:
+   Violation of these terms will terminate your license immediately.
+
+==============================
