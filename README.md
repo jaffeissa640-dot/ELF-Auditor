@@ -20,7 +20,7 @@ You may not redistribute, copy, or sell this software without permission.
     ./elf-auditor-v1 /path/to/binary
 
 > Example:
-    ./elf-auditor-v1 /bin/ls
+    ./elf-auditor-v1 /path/to/binary
 ### Features:
 - Detect **PIE** (Position Independent Executable)
 - Detect **NX** (Non-Executable Stack)
