@@ -11,9 +11,9 @@ Copyright (c) 2026 Jaff. All rights reserved.
      purchased a valid license key.
 
 2. Restrictions for Version 2:
-   - You may NOT copy, distribute, sell, or sublicense Version 2 source code
+   - You may NOT copy, distribute, sell, or sublicense Version 2
      without explicit written permission from the author.
-   - Reverse engineering, decompiling, or modifying Version 2 source code
+   - Reverse engineering, decompiling, or modifying Version 2 
      is strictly prohibited, except where legally allowed.
    - Redistribution of Version 2 binaries or source code is forbidden
      without authorization.
