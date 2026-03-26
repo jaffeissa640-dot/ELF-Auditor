@@ -21,7 +21,23 @@ You may not redistribute, copy, or sell this software without permission.
 
 > Example:
     ./elf-auditor-v1 /bin/ls
+### Features:
+- Detect **PIE** (Position Independent Executable)
+- Detect **NX** (Non-Executable Stack)
+- Detect **RELRO** (Read-Only Relocations)
+- Lightweight and fast, suitable for quick scans
+- Single command usage
 
+## Version 1 Example Output:
+```
+PIE: ENABLED
+NX: ENABLED                                                                                                                                                                                                                               
+RELRO: PRESENT                                                                                                                                                                                                                          
+Stack Canary: PRESENT                                                                                                                                                                                                 
+Potentially Risky Functions Detected:
+  strcpy
+  memcpy
+```
 ---
 
 ## Version 2 – Usage:(Professional Edition)
