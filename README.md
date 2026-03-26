@@ -1,5 +1,6 @@
 # ELF-Auditor
-Security auditing tools for Linux ELF binaries (Version 1 and Version 2)
+Security auditing tools for Linux ELF binaries (Version 1 and Version 2).
+ELF-Auditor helps you quickly assess ELF binaries for security risks, identify risky functions, and generate professional reports.
 1. **Version 1 (Community Edition)** – Free, open-source, basic scanning features.
 2. **Version 2 (Professional Edition)** – Paid version, with additional professional features unlocked via a license key.
 
@@ -15,7 +16,7 @@ You may not redistribute, copy, or sell this software without permission.
     unzip elf-auditor_v1.zip
 2. Make it executable
     chmod +x elf-auditor-v1
-3. First Run
+3. Basic scan
     ./elf-auditor-v1 /path/to/binary
 
 > Example:
@@ -29,12 +30,43 @@ You may not redistribute, copy, or sell this software without permission.
     unzip version2-auditor.zip
 2. Make it executable
     chmod +x version2-auditor
-3. First Run
+3. Basic scan
     ./Version2 --help
     ./Version2 --scan path/to//binary
     ./Version2 --json /path/to/binary
     ./Version2 --risk /path/to/binary
     ./Version2 --report /path/to/binary
+## Version 2 Example Output: 
+./Version2 --scan path/to/binary
+```
+NX: ENABLED
+PIE: ENABLED
+RELRO: FULL
+Stack Canary: PRESENT
+RPATH: None
+
+Potentially Risky Functions Detected:
+    X : FUNC    GLOBAL DEFAULT  UND strcpy@GLIBC_X.X.X 
+    X : FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_X.X 
+
+Potentially Risky Functions Detected:
+    X : FUNC    GLOBAL DEFAULT  UND strcpy@GLIBC_X.X.X 
+    X : FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_X.X 
+Stack Canary: PRESENT
+RPATH: None
+
+Risk Score: 0 (LOW)
+Contributing Factors:
+  Stack Canary: PRESENT (+0)
+  NX: ENABLED (+0)
+  PIE: ENABLED (+0)
+  RELRO: FULL (+0)
+  Risky Functions Detected:
+    X : FUNC    GLOBAL DEFAULT  UND strcpy@GLIBC_X.X.X 
+    X : FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_X.X 
+
+```
+
 
 ## Directory Structure
 
